@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container" 
+style="background-image: url(https://us.123rf.com/450wm/pilvitus/pilvitus1903/pilvitus190300028/124711386-film-strip-and-clapper-board-isolated-on-dark-blue-background-with-gold-frame-design-template.jpg?ver=6);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+">
+
+    
+    <br>
+
+    <h1><b><font color="#fffff">Watched Movie List</font></b></h1>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-movie-title">Movie Title</label>
+                        <input type="text" class="form-control" id="new-movie-title">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-movie-director">Director</label>
+                        <input type="text" class="form-control" id="new-movie-director">
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <button id="new-movie" class="btn btn-primary form-control">Add Movie</button>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="movie-list">
+    </div>
+
+
+    <script src="movieList.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
